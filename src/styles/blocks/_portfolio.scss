@@ -1,0 +1,36 @@
+.portfolio {
+  padding: 130px 0;
+  text-align: center;
+}
+
+.portfolio-inner {
+  @include container
+}
+
+.portfolio-title {
+  @include section-title
+}
+
+.portfolio-visual {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.portfolio-figure {
+  position: relative;
+  margin: 0;
+}
+
+.portfolio-desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 24px;
+  line-height: 33px;
+  background-color: rgba($color-dark, .4);
+  color: $color-text-light;
+}
