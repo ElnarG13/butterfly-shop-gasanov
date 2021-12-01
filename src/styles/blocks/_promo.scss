@@ -1,34 +1,29 @@
 .promo {
-  padding-top: 200px;
-  padding-bottom: 214px;
-  color: $color-text-light;
-
-}
-
-.promo-fade {
-  background-color: rgb(224, 190, 139);
+padding-top: 235px;
+padding-bottom: 214px;
+background-color: rgb(165, 151, 125);
+text-align: center;
 }
 
 .promo-inner {
   @include container
 }
 
-
 .promo-title {
+  margin: 0 0 100px;
   font-weight: 600;
   font-size: 72px;
   line-height: 98px;
-  text-align: center;
-  color: inherit;
+  color: $color-text-light;
 }
 
 .btn {
+  display: inline-block;
   padding: 30px 36px 31px 48px;
-  background-color: $color-light;
-  color: inherit;
-  font-weight: 400;
   font-size: 42px;
   line-height: 57px;
+  color: $color-text-light;
+  background-color: $color-light;
   border-radius: 6px;
   text-decoration: none;
 }
