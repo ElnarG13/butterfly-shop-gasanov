@@ -1,8 +1,20 @@
 .promo {
-padding-top: 235px;
-padding-bottom: 214px;
-background-color: rgb(165, 151, 125);
+background-image: url(/images/bg-men-glasses.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 text-align: center;
+}
+
+.promo-fade {
+  padding-top: 235px;
+  padding-bottom: 214px;
+  background: rgba(51, 51, 51, .4);
+
+  @media (max-width: $max-tablet) {
+    padding-top: 220px;
+    padding-bottom: 190px;
+  }
 }
 
 .promo-inner {
@@ -15,15 +27,16 @@ text-align: center;
   font-size: 72px;
   line-height: 98px;
   color: $color-text-light;
+
+  @media (max-width: $max-tablet) {
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
 }
 
-.btn {
-  display: inline-block;
-  padding: 30px 36px 31px 48px;
-  font-size: 42px;
-  line-height: 57px;
-  color: $color-text-light;
-  background-color: $color-light;
-  border-radius: 6px;
-  text-decoration: none;
-}

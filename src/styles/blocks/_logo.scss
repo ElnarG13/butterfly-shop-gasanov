@@ -1,0 +1,24 @@
+.logo {
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  color: inherit;
+  text-decoration: none;
+
+  @media (max-width: $max-tablet) {
+    margin-right: 122px;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.logo.logo-transparent {
+  margin-right: 211px;
+}
+

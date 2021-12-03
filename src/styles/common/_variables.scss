@@ -2,3 +2,15 @@
 $color-dark:#333333;
 $color-light:#FF2D2D;
 $color-text-light: #FFF;
+
+// Indents
+$indent-gap: 30px;
+$indent-gap-half: $indent-gap / 2;
+
+// Breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$max-tablet: $desktop - 1;
+$max-mobile: $tablet - 1;

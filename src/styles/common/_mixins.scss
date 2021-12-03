@@ -1,5 +1,5 @@
 @mixin container($width: 1278px) {
-  width: $width;
+  max-width: $width + $indent-gap-half;
   margin: 0 auto;
   border: 1px solid red;
 }
@@ -12,4 +12,16 @@
   line-height: 87px;
   text-align: center;
   color: $color-dark;
+
+  @media (max-width: $max-tablet) {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+
 }
