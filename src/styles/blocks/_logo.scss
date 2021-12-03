@@ -7,18 +7,16 @@
   text-decoration: none;
 
   @media (max-width: $max-tablet) {
-    margin-right: 122px;
     font-size: 36px;
     line-height: 49px;
   }
 
   @media (max-width: $max-mobile) {
+    margin: 0;
     font-size: 28px;
     line-height: 38px;
+
   }
 }
 
-.logo.logo-transparent {
-  margin-right: 211px;
-}
 

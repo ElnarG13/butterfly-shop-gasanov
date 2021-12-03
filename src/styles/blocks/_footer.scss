@@ -2,6 +2,10 @@
   padding: 31px 0;
   color: $color-text-light;
   background-color: $color-dark;
+
+  @media (max-width: $max-mobile) {
+  padding-bottom: 35px;
+  }
 }
 
 .footer-inner {
@@ -11,6 +15,10 @@
 .footer-wrap {
   display: flex;
   align-items: center;
+
+  @media (max-width: $max-mobile) {
+    flex-direction: column;
+  }
 }
 
 .phone {
@@ -22,6 +30,11 @@
 
   @media (max-width: $max-tablet) {
     margin-right: 35px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin: 0;
+    padding-bottom: 15px;
   }
 }
 
