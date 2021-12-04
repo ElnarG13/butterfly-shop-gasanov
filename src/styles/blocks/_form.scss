@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.form-field {
+  position: relative;
+  padding: 0;
+
+}
+
+.form-field-third {
+  flex-basis: 33.33%;
+}
+
+.form-label {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
+}
+
+
+.form-input {
+  width: 100%;
+  padding: 35px;
+  font-family: $font-open;
+  font-size: 28px;
+  line-height: 34px;
+  background-color: $color-text-light;
+  color: $color-dark;
+  border: none;
+  border-radius: 6px;
+}
+
+
+
+
+
+
