@@ -6,13 +6,37 @@
 }
 
 .form-field {
-  position: relative;
-  padding: 0;
+  flex-basis: 33.33%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (max-width: $max-tablet) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: $max-mobile) {
+    flex-basis: 100%;
+  }
 
 }
 
+.form-field-half {
+  @media (max-width: $max-mobile) {
+    padding: 0;
+  }
+}
+
 .form-field-third {
-  flex-basis: 33.33%;
+  position: relative;
+
+  @media (max-width: $max-tablet) {
+    flex-basis: 100%;
+    padding: 0;
+
+
+  }
+
+
 }
 
 .form-label {
@@ -25,7 +49,7 @@
 
 .form-input {
   width: 100%;
-  padding: 35px;
+  padding: 30px;
   font-family: $font-open;
   font-size: 28px;
   line-height: 34px;
