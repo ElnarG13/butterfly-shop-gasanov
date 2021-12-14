@@ -8,6 +8,7 @@
   background-color: $color-light;
   border-radius: 6px;
   text-decoration: none;
+  cursor: pointer;
 
   @media (max-width: $max-mobile) {
     padding: 20px 14px;

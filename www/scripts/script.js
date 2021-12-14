@@ -19,5 +19,22 @@ $(document).ready(function () {
   $('.contacts-content').eq(index).addClass(activeClass);
 });
 
+ // Аккардеоны на странице FAQ
+ let prevIndex;
+ $('.accordeon-question').on('click', function () {
+   const currentIndex = $(this).index('.accordeon-question');
+
+   if (prevIndex === currentIndex) {
+     $(this).next().slideToggle();
+     return;
+   }
+
+   $('.accordeon-answear').slideUp();
+   $(this).next().slideDown();
+
+   prevIndex = currentIndex;
+ })
+
+
 
 })
