@@ -1,0 +1,42 @@
+.contacts {
+  padding-top: 230px;
+  padding-bottom: 130px;
+
+}
+
+.contacts-inner {
+  @include container;
+}
+
+.contacts-title {
+  @include section-title;
+}
+
+.contacts-wrap {
+  display: flex;
+}
+
+.contacts-content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.contacts-text {
+  flex-basis: 40%;
+  font-size: 24px;
+  line-height: 33px;
+  list-style: none;
+
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+}
+
+.contacts-visual {
+  flex-basis: 60%;
+
+}

@@ -1,5 +1,15 @@
 .main-nav {
 
+  @media (min-width: $desktop) {
+    display: block !important;
+  }
+
+  @media (min-width: $tablet) {
+    display: block !important;
+  }
+
+
+
   @media (max-width: $max-mobile) {
     position: absolute;
     display: none;
