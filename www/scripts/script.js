@@ -35,6 +35,13 @@ $(document).ready(function () {
    prevIndex = currentIndex;
  })
 
+ // Галерея отзывов , слайдер
+ if ($('.reviews-wrap').length) {
+  $('.reviews-wrap').slick({
+    dots: true
+  });
+}
+
 
 
 })

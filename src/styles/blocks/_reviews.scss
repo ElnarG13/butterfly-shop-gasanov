@@ -1,0 +1,44 @@
+.reviews {
+  padding-top: 240px;
+  padding-bottom: 130px;
+}
+
+.reviews-inner {
+  @include container;
+}
+
+.reviews-title {
+  @include section-title;
+}
+
+.reviews-wrap {
+  margin-top: 80px;
+  width: 66.66%;
+  margin: 70px auto 0;
+}
+
+.reviews-ava {
+  flex-basis: 37,5%;
+}
+
+.reviews-photo {
+  width: 304px;
+  height: 304px;
+}
+
+.reviews-content {
+  flex-basis: 62,5%;
+  margin-left: 22px;
+}
+
+.review-name {
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.review-quote {
+margin: 40px 0 0 0;
+font-size: 24px;
+line-height: 33px;
+}
+
