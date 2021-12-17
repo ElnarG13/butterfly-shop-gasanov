@@ -6,6 +6,43 @@ $(document).ready(function () {
    $('.main-nav').slideToggle();
  })
 
+ //Фильтрация в портфолио
+ $('.filter-link').on('click', function (e) {
+  e.preventDefault();
+  let dataFilter = $(this).data('filter');
+
+  $('.filter-link').removeClass('active');
+  $(this).addClass('active');
+
+  if (dataFilter === 'all') {
+    $('.catalog-item').show();
+    return;
+  }
+
+  $('.catalog-item').each(function () {
+    let dataType = $(this).data('type');
+
+    if (dataFilter === dataType) {
+      $(this).show();
+      return;
+    }
+
+    $(this).hide();
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
  //Табы на странице контактов
  $('.tabs-link').on('click', function (e) {
   e.preventDefault();

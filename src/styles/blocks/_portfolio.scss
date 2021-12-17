@@ -12,6 +12,10 @@
 
 }
 
+.portfolio-catalog {
+  padding-top: 240px;
+}
+
 .portfolio-inner {
   @include container
 }
@@ -42,6 +46,7 @@
 
 }
 
+
 .portfolio-figure {
   flex-basis: 50%;
   position: relative;
@@ -66,6 +71,7 @@
   }
 
 }
+
 
 .portfolio-desc {
   position: absolute;
