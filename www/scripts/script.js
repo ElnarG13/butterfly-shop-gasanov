@@ -32,6 +32,43 @@ $(document).ready(function () {
 
 });
 
+$('.j-catalog-btn').on('click', function () {
+
+  $.ajax({
+    type: 'POST',
+    url: '../json/catalog.json',
+    data: 'count=4',
+    success: function (response) {
+      createHtml(response.butterflys);
+    },
+    error: function () {
+      console.log('error');
+    }
+  });
+
+});
+
+function createHtml(butterflysArray) {
+  let newHtml = '';
+
+  for (let i = 0; i < butterflysArray.length; i++) {
+    newHtml = newHtml + `
+    <li class="catalog-item" data-type="strict">
+      <figure class="portfolio-figure">
+          <img src="${butterflysArray[i].imageUrl}" alt="${butterflysArray[i].imageAlt}" class="portfolio-image">
+          <figcaption class="portfolio-desc">${butterflysArray[i].text}</figcaption>
+      </figure>
+    </li>`;
+  }
+
+  addToPage(newHtml);
+}
+
+function addToPage(htmlString) {
+  $('.catalog-list').append(htmlString);
+}
+
+
 
 
 
@@ -78,6 +115,8 @@ $(document).ready(function () {
     dots: true
   });
 }
+
+
 
 
 
