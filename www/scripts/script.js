@@ -6,6 +6,7 @@ $(document).ready(function () {
    $('.main-nav').slideToggle();
  })
 
+
  //Фильтрация в портфолио
  $('.filter-link').on('click', function (e) {
   e.preventDefault();
