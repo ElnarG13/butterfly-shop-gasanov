@@ -1,6 +1,13 @@
 .reviews-slider {
   position: relative;
   display: flex !important;
+
+  @media (max-width: $max-mobile) {
+    display: block !important;
+
+  }
+
+
 }
 
 .slick-arrow {
@@ -21,11 +28,33 @@
   background-image: url('../images/arrow-prev.png');
   left: -198px;
 
+  @media (max-width: $max-tablet) {
+    left: -90px;
+  }
+
+  @media (max-width: $max-mobile) {
+    left: -80px;
+    margin-top: 403px;
+    margin-bottom: 103px;
+  }
+
 }
 
 .slick-next {
   background-image: url('../images/arrow-next.png');
   right: -198px;
+
+  @media (max-width: $max-tablet) {
+    right: -90px;
+
+  }
+
+  @media (max-width: $max-mobile) {
+    right: -80px;
+    margin-top: 403px;
+    margin-bottom: 103px;
+
+  }
 }
 
 
