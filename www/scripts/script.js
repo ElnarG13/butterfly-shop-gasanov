@@ -36,7 +36,7 @@ $(document).ready(function () {
 $('.j-catalog-btn').on('click', function () {
 
   $.ajax({
-    type: 'POST',
+    type: 'GET',
     url: '../json/catalog.json',
     data: 'count=4',
     success: function (response) {
